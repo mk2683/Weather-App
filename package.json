@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mk2683/Weather-App#readme",
   "dependencies": {
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "yargs": "^11.0.0"
   }
 }
