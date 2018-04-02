@@ -9,18 +9,18 @@ let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric
 request(url, function (err, response, body) {
 		if (err) {
 		console.log('error:', error);
-	} else{
+		} else{
 		let weather = JSON.parse(body);
 		// let message = `It's ${weather.main.temp} degrees in ${weather.name}!`;
 		let message = ` {
-			city: ${weather.name},
-			cordinate: ${weather.coord.lon} ${weather.coord.lat},
-			temperature: ${weather.main.temp},
-			pressure: ${weather.main.pressure},
-			weather condition: ${weather.weather[0].main},
-			wind speed: ${weather.wind.speed} km/h ;
-		} `
-		console.log(message);
-	};
+				city: ${weather.name},
+				cordinate: ${weather.coord.lon} ${weather.coord.lat},
+				temperature: ${weather.main.temp},
+				pressure: ${weather.main.pressure},
+				weather condition: ${weather.weather[0].main},
+				wind speed: ${weather.wind.speed} km/h ;
+			} `
+			console.log(message);
+		};
 }) ;
 
